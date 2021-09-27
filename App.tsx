@@ -1,21 +1,40 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, View } from 'react-native';
+import { NativeBaseProvider, ScrollView, Text, VStack } from 'native-base';
+import AddTodo from './components/AddTodo';
+import { db } from './firebase';
 
 export default function App() {
+  console.log(db);
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeBaseProvider>
+      <View style={styles.container}>
+        <StatusBar style='light' />
+
+        <ScrollView>
+          <VStack>
+            <Text>lul</Text>
+            <Text>lul</Text>
+            <Text>lul</Text>
+            <Text>lul</Text>
+            <Text>lul</Text>
+            <Text>lul</Text>
+          </VStack>
+        </ScrollView>
+
+        <AddTodo />
+      </View>
+    </NativeBaseProvider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#121212',
+  },
+  text: {
+    color: '#fff',
   },
 });
