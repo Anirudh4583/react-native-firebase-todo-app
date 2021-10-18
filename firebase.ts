@@ -20,13 +20,13 @@ const firebaseConfig = {
   // appId,
   // measurementId,
 
-  apiKey: 'AIzaSyBTaOEnFyP-BZxmcDE6NHx5dk0gQ-d8UX8',
-  authDomain: 'react-todo-an.firebaseapp.com',
-  projectId: 'react-todo-an',
-  storageBucket: 'react-todo-an.appspot.com',
-  messagingSenderId: '550422368632',
-  appId: '1:550422368632:web:05acef7f25f2fea09cb88d',
-  measurementId: 'G-97ENTY5YBZ',
+  apiKey: 'some',
+  authDomain: 'some',
+  projectId: 'some',
+  storageBucket: 'some',
+  messagingSenderId: 'some',
+  appId: 'some',
+  measurementId: 'some',
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
